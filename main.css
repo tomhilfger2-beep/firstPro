@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+.nav__login{
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #F5F5F5;
+    backdrop-filter: blur (12px);
+    border-bottom: 1px solid #F5F5F5;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.nav__ul {
+    display: flex;
+    align-items: center;
+    color: rgb(18, 16, 16);
+    list-style-type: none;
+    gap: 48px;
+}
+
+
+.nav__btn{
+padding: 10px 10px 10px 10px;
+    background-color: #0075FF;
+    border-radius: 30px;
+    border: none;
+    color: #f4f5f4;
+}
+
+.hero__btn{
+    padding: 20px 16px;
+        background-color: #0075FF;
+    border-radius: 30px;
+    border: none;
+    color: #f4f5f4;
+    margin-top: 10px;
+}
+
+
+.hero__numbers{
+  display: flex;
+}
+
+.hero__number{
+    padding-top: 20px;
+}
+
+
+.hero__img{
+    padding-left: 500px;
+  display: flex;
+}
+
+
+
+.card__sozlar{
+    text-align: center;
+}
+
+.card__soz{
+color: gray;
+}
+
+.card__cards{
+    display: flex;
+    gap: 100px;
+    text-align: center;
+}
+
+.card__login{
+    padding: 10px 10px;
+    background-color: #0075FF;
+    color: white;
+    border-radius: 30px;
+}
+.card__log{
+    padding: 10px 10px;
+    background-color: white;
+    color: black;
+}
+
+.card__btn{
+    margin-left: 390px;
+    margin-top: 10px;
+}
