@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     width: 1440px;
     margin: 0 auto;
@@ -11,9 +15,21 @@
 }
 
 
+.nav__btns{
+    gap: 50px;
+}
+
 .nav__login {
-    padding: 10px 10px;
+    gap: 100px;
+    padding: 14px 16px;
     border-radius: 10px;
+    border: 1px solid gray;
+    transition: all 0.6s ease-in;
+}
+
+.nav__login:hover {
+    transform: scale(1.1);
+    transition: all 0.6s ease-in;
 }
 
 .nav__logo {
@@ -33,14 +49,39 @@ header {
     backdrop-filter: blur (12px);
     border-bottom: 1px solid #F5F5F5;
     z-index: 1;
+    animation: headerAnim 0.7s ease-in forwards;
+}
+
+
+@keyframes headerAnim {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
 
 a {
+    color: aqua;
+    transition: all 0.6s ease-in;
     text-decoration: none;
     color: inherit;
 }
 
+
+.li {
+    padding: auto;
+}
+
+.li:hover {
+    color: aqua;
+    transition: all 0.2s ease-in;
+}
 
 .nav__ul {
     display: flex;
@@ -52,28 +93,36 @@ a {
 
 
 .nav__btn {
-    padding: 10px 10px;
+    padding: 17px 24px;
     background-color: #0075FF;
     color: white;
-    transition: all 0.3 ease-in;
+    border-radius: 14px;
     cursor: pointer;
-    border: 1px solid gray;
+    border: none;
+    transition: all 0.3s ease-in;
 }
 
-.nav__btn :hover {
-    background-color: rgb(194, 75, 75);
-    color: rgb(123, 51, 51);
-    border: 1px solid black;
+.nav__btn:hover {
+    transform: scale(1.03);
+
 }
+
+
 
 
 .hero__btn {
-    padding: 20px 16px;
+    padding: 16px 25px;
     background-color: #0075FF;
     border-radius: 30px;
     border: none;
     color: #f4f5f4;
+    transition: all 0.6s ease-in;
     margin-top: 10px;
+}
+
+.hero__btn:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in;
 }
 
 
@@ -97,11 +146,22 @@ a {
     left: 24.9%;
 }
 
-.hero__h1{
+.hero__call {
+    line-height: 1px;
+}
+
+.hero__phone {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+
+
+.hero__h1 {
     padding: 10px 10px 10px 10px;
 }
 
-.hero__p{
+.hero__p {
     padding-bottom: 5px;
     padding-top: 5px;
 }
@@ -121,24 +181,45 @@ a {
 
 }
 
+
 .card__login {
     padding: 10px 10px;
     background-color: #0075FF;
     color: white;
     border-radius: 30px;
+    border: none;
+    transition: all 0.6s ease-in;
 }
+
+.card__login:hover {
+    transform: scale(1.1);
+    transition: all 0.6s ease-in;
+}
+
+
 
 .card__log {
     padding: 10px 10px;
     background-color: white;
     color: black;
+    border: 1px solid gray;
     border-radius: 20px;
+    transition: all 0.6s ease-in;
+}
+
+.card__log {
+    transform: scale(1.1);
+    transition: all 0.6s ease-in;
 }
 
 .card__btn {
     margin-left: 500px;
     margin-top: 10px;
+    gap: 20px;
+
 }
+
+
 
 
 .aktiv__sozlar {
@@ -199,6 +280,17 @@ a {
 
 }
 
+.covid__data {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.covid__phone {
+    background-color: white;
+    border-radius: 50%;
+    padding: 16px;
+}
 
 .covid__soz {
     color: white;
@@ -225,8 +317,14 @@ a {
     padding: 10px 10px;
     background-color: #0075FF;
     color: white;
-    border: 1px solid rgb(230, 229, 229);
+    border: none;
     border-radius: 10px;
+    transition: all 0.6s ease-in;
+}
+
+.covid__btn:hover {
+    transform: scale(1.1);
+    transition: all 0.6s ease-in;
 }
 
 
@@ -271,8 +369,13 @@ a {
     color: white;
     border: 1px solid rgb(230, 229, 229);
     border-radius: 10px;
+    transition: all 0.6s ease-in;
 }
 
+.house__btn:hover {
+    transform: scale(1.1);
+    transition: all 0.6s ease-in;
+}
 .house__button {
     justify-content: center;
     margin-top: 10px;
@@ -289,10 +392,11 @@ a {
 }
 
 
- .img__P{
+.img__P {
     padding-bottom: 5px;
     padding-top: 10px;
- }
+}
+
 .img__btn {
     padding: 10px 10px;
     background-color: #0075FF;
@@ -329,6 +433,12 @@ a {
     color: white;
     border: 1px solid rgb(230, 229, 229);
     border-radius: 10px;
+    transition: all 0.6s ease-in;
+}
+
+.logo__get:hover {
+    transform: scale(1.1);
+    transition: all 0.6s ease-in;
 }
 
 
@@ -339,34 +449,41 @@ a {
     color: rgb(4, 1, 1);
     border: 1px solid rgb(230, 229, 229);
     border-radius: 10px;
+    transition: all 0.6s ease-in;
+}
+
+.logo__button:hover {
+    transform: scale(1.1);
+    transition: all 0.6s ease-in;
 }
 
 
 .logo__texts {
     background-color: white;
-    width: 300px;
+    width: 400px;
     align-items: center;
     position: absolute;
     left: 80px;
     top: 400px;
-     padding-bottom: 10px;
-padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 5px 5px;
+    padding-top: 10px;
     border-radius: 10px;
-   
+
 }
 
 .logo__text {
 
     background-color: white;
-    width: 300px;
+    width: 400px;
     margin-left: 299px;
     position: absolute;
     right: 300px;
     top: 400px;
     padding-bottom: 10px;
-       padding-top: 10px;
-
-      border-radius: 10px;
+    padding-top: 10px;
+    padding: 5px 5px;
+    border-radius: 10px;
 }
 
 .logo__title {
@@ -449,18 +566,18 @@ padding-top: 10px;
 }
 
 
-.inp__h2{
+.inp__h2 {
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
-.inp__h3{
+.inp__h3 {
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
-.inp__num{
-      padding-bottom: 10px;
+.inp__num {
+    padding-bottom: 10px;
     padding-top: 10px;
 }
 
@@ -480,7 +597,7 @@ padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.img__one{
+.img__one {
     padding-top: 10px;
 }
 
@@ -507,17 +624,17 @@ padding-top: 10px;
     margin-top: 20px;
 }
 
-.footer__p{
+.footer__p {
     color: #0075FF;
 }
 
-.footer__hr{
-       margin-top: 150px;
+.footer__hr {
+    margin-top: 150px;
 }
 
-.footer__img{
-   display: flex;
-  align-items: center;
-  gap: 30px;
-padding-top: 50px;
+.footer__img {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
 }
