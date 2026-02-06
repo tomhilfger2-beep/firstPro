@@ -79,7 +79,7 @@ a {
 }
 
 .li:hover {
-    color: aqua;
+    color: #0800ff;
     transition: all 0.2s ease-in;
 }
 
@@ -588,7 +588,14 @@ a {
     border: 1px solid rgb(230, 229, 229);
     border-radius: 10px;
     margin-top: 20px;
+     transition: all 0.6s ease-in;
     margin-left: 100px;
+}
+
+
+.btn__inp:hover{
+     transform: scale(1.1);
+   
 }
 
 .footer__title {
@@ -621,7 +628,13 @@ a {
     color: white;
     border: 1px solid rgb(230, 229, 229);
     border-radius: 10px;
+     transition: all 0.6s ease-in;
     margin-top: 20px;
+}
+
+.footer__btn:hover{
+      transform: scale(1.1);
+   
 }
 
 .footer__p {
